@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.3</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.pl.df</groupId>
+		<artifactId>example-activemq-classic-ms-parent</artifactId>
+		<relativePath>../example-activemq-classic-ms-parent</relativePath>
+		<version>0.0.1</version>
 	</parent>
 	
 	<groupId>com.pl.df</groupId>
