@@ -13,7 +13,8 @@ Pre requariment: To have it work first, the apache-activemq classic must be runn
 Run in order:
 1. The `example-activemq-classic-ms-lib` .jar project and then,
 2. The `example-activemq-classic-ms-producer` microservice project, and lastly
-2. The `example-activemq-classic-ms-consumer` microservice project.
+3. The `example-activemq-classic-ms-consumer` microservice project.
+
 Also you can create .jar files all at once by executing the `example-activemq-classic-ms-parent` parent project.
 
 You can view sent/recive messages via activemq admin panel: [http://localhost:8161/admin/queues.jsp](http://localhost:8161/admin/queues.jsp)
