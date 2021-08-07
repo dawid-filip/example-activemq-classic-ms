@@ -21,7 +21,7 @@ public class ProducerRestController {
 	@Autowired
 	private ProducerService producer;
 	
-	// http://localhost:8080/active-mq-classic/send
+	// http://localhost:8081/active-mq-classic/send
 	@GetMapping("/send")
 	public List<Object> sendMessages() {
 		log.info("Executing </send> REST API...");
@@ -36,14 +36,14 @@ public class ProducerRestController {
 		return list;
 	}
 	
-	// http://localhost:8080/active-mq-classic/send/test-value
+	// http://localhost:8081/active-mq-classic/send/test-value
 	@GetMapping("/send/test-value")
 	public TestValue sendTestValueMessage() {
 		log.info("Executing </send/test-value> REST API...");
 		return producer.sendTestValuetMessage();
 	}
 	
-	// http://localhost:8080/active-mq-classic/send/test-string-value
+	// http://localhost:8081/active-mq-classic/send/test-string-value
 	@GetMapping("/send/test-string-value")
 	public String sendTestStringValueMessage() {
 		log.info("Executing </send/test-string-value> REST API...");
