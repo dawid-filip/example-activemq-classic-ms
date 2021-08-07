@@ -1,7 +1,7 @@
 ## The example-activemq-classic-ms
 Simple example of Activemq Classic implementation where *producer* and *consumer* run as independend microservices.
 
-After application example-activemq-classic-ms-producer start-up it will send up 2 messages on the queues and then application will pull and read sent messaged. This will recur every 10 seconds.
+After application `example-activemq-classic-ms-producer` start-up it will send up 2 messages on the 2 queues and then `example-activemq-classic-ms-consumer` application will pull and read those sent messaged. This will recur every 10 seconds.
 You can also send direct message by executing one of the following REST API:
 1. GET [http://localhost:8081/active-mq-classic/send](http://localhost:8081/active-mq-classic/send). This will send one message to each queue.
 2. GET [http://localhost:8081/active-mq-classic/send/test-value](http://localhost:8081/active-mq-classic/send/test-value). This will send message to test-value-object-queue queue.
@@ -11,8 +11,10 @@ You can also send direct message by executing one of the following REST API:
 Pre requariment: To have it work first, the apache-activemq classic must be running locally.
 
 Run in order:
-1. The `example-activemq-classic-ms-producer` microservice project and then,
+1. The `example-activemq-classic-ms-lib` .jar project and then,
+2. The `example-activemq-classic-ms-producer` microservice project, and lastly
 2. The `example-activemq-classic-ms-consumer` microservice project.
+Also you can create .jar files all at once by executing the `example-activemq-classic-ms-parent` parent project.
 
 You can view sent/recive messages via activemq admin panel: [http://localhost:8161/admin/queues.jsp](http://localhost:8161/admin/queues.jsp)
 
